@@ -5,7 +5,7 @@ const inquirer = require('inquirer');
 // const { allDepts } = require('./queryFunctions')
 
 // Connect to database
-// const db = mysql.createConnection(
+const db = mysql.createConnection(
 //     {
 //       host: 'localhost',
 //       port: 3306,
@@ -14,7 +14,7 @@ const inquirer = require('inquirer');
 //       database: 'emp_db'
 //     },
 //  console.log(`Connected to the database.`)
-// );
+);
 
 console.table(
   "\n------------ W e l c o m e  t o  E m p l o y e e  T r a c k e r ------------\n"
@@ -106,7 +106,7 @@ function viewAllEmployees() {
 }
 
 function viewAllRoles() {
-  db.query("SELECT employee.roles_id FROM employee",
+  db.query("SELECT * FROM employee",
   function(err, res) {
     console.log(res); 
     startApp();
@@ -114,13 +114,14 @@ function viewAllRoles() {
 }
 
 function viewDepartments() {
-  db.query("SELECT departments.department_name FROM repartments",
+  db.query("SELECT * FROM repartments",
   function(err, res) {
     console.log(res); 
     startApp();
 });
 
 function addEmployee () {
+  
 
 };
 
