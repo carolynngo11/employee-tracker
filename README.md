@@ -15,7 +15,7 @@ The objective of this project is to create a tracker that displays the employees
 Used Node, MYSQL, MYSQL2 npm, inquirer package, and console.table package.
 
 ## Usage
-[Video Link](URL PLACEHOLDER)
+[Video Link](https://drive.google.com/file/d/1Xqhswp1kxEvHcR1N2r2xL7vSkhk4Hldb/view)
 
 ## Questions
 Have any Questions? Contact me: https://github.com/carolynngo11
